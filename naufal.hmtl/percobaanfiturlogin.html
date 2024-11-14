@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* Menambahkan latar belakang dengan gradien biru ke ungu */
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradien dari biru ke ungu */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    height: 100vh; /* Menjamin body memiliki tinggi layar penuh */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Menyusun konten form ke tengah */
+    align-items: center; /* Menyusun konten form ke tengah secara vertikal */
+}
+
+/* Gaya untuk container form login */
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Styling judul form login */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Gaya untuk label input form (Username, Password) */
+h3 {
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Gaya untuk input text dan password */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Gaya untuk tombol login */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0072ff; /* Warna tombol biru */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol login */
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Styling untuk placeholder di input form */
+input::placeholder {
+    color: #999;
+}
+
+/* Mengatur form login agar lebih responsif pada layar kecil */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+  
+    </style>
+</head>
+
+<body>
+    <section class="halaman">
+        <div class="container">
+            <h1>Login</h1>
+            <form action="">
+                <h3>Username</h3>
+                <input type="text"><br>
+                <h3>Password</h3>
+                <input type="text">
+                <button>Masuk</button>
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
